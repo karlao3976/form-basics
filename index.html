@@ -12,25 +12,57 @@
 
 <body>
     <div class="container">
-        <h1>Form Basics</h1>
+        <h1>Sports Survey</h1>
         <hr>
         <form action="http://www.w3schools.com/action_page.php" method="get">
 
             Name:
-            <input type="text" name="name"><br> E-mail:
-            <input type="email" name="email"><br>
+            <input type="password" name="name"><br> E-mail:
+            <input type="email" name="email"><br><br>
 
             <!--add your own inputs below-->
-
-
-
-
-
-
-
-
+            
+            Do you play any sports?<br>
+            <input type="radio" name="ques1" value="yes"> yes
+            <input type="radio" name="ques1" value="no"> no
+            <br><br>
+            
+            How many sports do you play?<br>
+            <select name="ques2">
+                <option value="0" selected>0</option>
+                 <option value="1" selected>1</option>
+                 <option value="2" selected>2</option>
+                 <option value="3 or more" selected>3 or more</option>
+            </select>
+            <br><br>
+            
+            What sport(s) do you play?<br>
+            <input type="checkbox" name="sport1" value="basketball"> basketball <br>
+            <input type="checkbox" name="sport2" value="soccer"> soccer <br>
+            <input type="checkbox" name="sport3" value="volleyball"> volleyball <br>
+            <input type="checkbox" name="sport4" value="tennis"> tennis <br>
+            <input type="checkbox" name="sport5" value="baseball"> baseball <br>
+            <input type="text" name="other" placeholder="other:">
+            
+            
+            <br><br>
+            
+            What is your most positive experience in playing a sport? <br>
+            <textarea name="ques4"></textarea>
+            <br>
+            
+            What is your most negative experience in playing a sport? <br>
+            <textarea name="ques5"></textarea>
+            <br>
+            
+            Who is your favorite athlete?<br>
+            <input type="text" name="ques5" placeholder="ex: Serena Williams" required>
+            
+            
+            
+            
             <!--add your own inputs above-->
-
+            <br>
             <input class="blue-button" type="submit" value="Submit">
         </form>
     </div>
